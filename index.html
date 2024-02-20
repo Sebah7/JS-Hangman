@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,24 @@
   <meta name="theme-color" content="#2f4bc6">
 
   <title>Hangman</title>
-  <link rel="icon" href="/u03-js-hangman-Sebah7/images/ropeIcon.png">
-  <link rel="stylesheet" href="/u03-js-hangman-Sebah7/css/style.css">
+  <base href="./"> <!-- the base URL -->
+  <link rel="icon" href="images/ropeIcon.png"> <!-- Relative URL -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Relative URL -->
 </head>
+
 <body>
-
   <header class="game-info">
-      <h1 class="game-name">Hangman</h1>
-      <h2 class="category">
-        Category: <span></span>
-      </h2>
+    <h1 class="game-name">Hangman</h1>
+    <h2 class="category">
+      Category: <span></span>
+    </h2>
   </header>
-
   <hr>
-
   <main class="container">
 
     <div class="letters-guess"></div>
 
-<hr>
+    <hr>
     <section class="man-keyboard">
       <figure class="hangman-draw">
         <div class="the-draw">
@@ -34,9 +34,10 @@
           <div class="the-rope"></div>
           <div class="the-man">
             <div class="head"></div>
-          <div class="body"></div>
-          <div class="hands"></div>
-          <div class="legs"></div></div>
+            <div class="body"></div>
+            <div class="hands"></div>
+            <div class="legs"></div>
+          </div>
         </div>
       </figure>
       <div class="keyboard-buttons">
@@ -69,30 +70,31 @@
           <li><button type="button" class="letter-box" data-key="Z">Z</button></li>
         </ul>
 
-          <hr>
+        <hr>
 
-          <nav class="playAgain-Hint">
-              <button type="button" id="muteButton">Mute Sound</button>
-              <button type="button" id="play-again">Reset Game</button>
+        <nav class="playAgain-Hint">
+          <button type="button" id="muteButton">Mute Sound</button>
+          <button type="button" id="play-again">Reset Game</button>
 
-              <button type="button" id="hintBtn">Get Hint</button>
-            <p id="hintDisplay"></p>
-          </nav>
+          <button type="button" id="hintBtn">Get Hint</button>
+          <p id="hintDisplay"></p>
+        </nav>
       </div>
     </section>
 
-  <hr>
+    <hr>
   </main>
 
   <footer>
     <p>
       <a class="css-validator" href="http://jigsaw.w3.org/css-validator/check/referer">
-          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
-          </a>
-      </p>
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+      </a>
+    </p>
   </footer>
-  <audio id="success" src="/u03-js-hangman-Sebah7/audio/rightanswer-95219.mp3" preload="auto"></audio>
-  <audio id="fail" src="/u03-js-hangman-Sebah7/audio/buzzer-or-wrong-answer-20582.mp3" preload="auto"></audio>
-  <script src="/u03-js-hangman-Sebah7/js/script.js"></script>
+  <audio id="success" src="audio/rightanswer-95219.mp3" preload="auto"></audio>
+  <audio id="fail" src="audio/buzzer-or-wrong-answer-20582.mp3" preload="auto"></audio>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
